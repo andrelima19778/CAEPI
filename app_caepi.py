@@ -86,8 +86,8 @@ if uploaded_file is not None:
 
 else:
     st.info("Aguardando upload do arquivo CSV...")
-        else:
-            st.error("As colunas 'SITUACAO' ou 'EQUIPAMENTO' não foram encontradas no CSV.")
+    else:
+        st.error("As colunas 'SITUACAO' ou 'EQUIPAMENTO' não foram encontradas no CSV.")
 
 else:
     st.info("Aguardando upload do arquivo CSV...")
