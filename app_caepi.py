@@ -83,11 +83,5 @@ if uploaded_file is not None:
                     st.info("Nenhum laudo específico encontrado para este equipamento.")
         else:
             st.error(f"Erro: Certifique-se de que as colunas 'SITUACAO', 'EQUIPAMENTO' e '{col_fabricante}' existem no arquivo.")
-
-else:
-    st.info("Aguardando upload do arquivo CSV...")
-    else:
-        st.error("As colunas 'SITUACAO' ou 'EQUIPAMENTO' não foram encontradas no CSV.")
-
 else:
     st.info("Aguardando upload do arquivo CSV...")
