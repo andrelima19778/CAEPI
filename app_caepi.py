@@ -52,7 +52,7 @@ if uploaded_file is not None:
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "🔍 CONSULTA INDIVIDUAL (CA)", 
         "📋 CONSULTA EM LOTE (CA)",
-        "📊 RELATÓRIO DE EQUIPAMENTOS",
+        "⛑ RELATÓRIO DE EQUIPAMENTOS",
         "📈 ANÁLISE DA BASE DE DADOS",
         "ℹ️ VERSÃO"
     ])
