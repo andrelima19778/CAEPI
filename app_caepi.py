@@ -53,7 +53,7 @@ if uploaded_file is not None:
         "🔍 CONSULTA INDIVIDUAL (CA)", 
         "📋 CONSULTA EM LOTE (CA)",
         "📊 RELATÓRIO DE EQUIPAMENTOS",
-        "📈 ANÁLISE DO BANCO DE DADOS",
+        "📈 ANÁLISE DA BASE DE DADOS",
         "ℹ️ VERSÃO"
     ])
 
