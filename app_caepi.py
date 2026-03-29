@@ -75,7 +75,8 @@ if uploaded_file is not None:
                         v = registro_unico[k]
                         sit = str(registro_unico.get("SITUACAO", "")).upper()
                         # Formatação de milhar específica para o campo NR_CA na exibição
-                        if k == col_ca: v = formatar_milhar(v)
+                        #if k == col_ca: v = formatar_milhar(v)
+                        if k == col_ca: v = v.astype(str)
                         if k == "EQUIPAMENTO":
                             v = f"**{v}**"
                         
@@ -133,7 +134,8 @@ if uploaded_file is not None:
                     for fab, cas in agrupado.items():
                         st.markdown(f"**🏢 {fab}**")
                         # Formata os CAs na lista horizontal
-                        cas_formatados = [formatar_milhar(c) for c in sorted(cas)]
+                        #cas_formatados = [formatar_milhar(c) for c in sorted(cas)]
+                        cas_formatados = [c.astype(str) for c in sorted(cas)]
                         st.info(" • ".join(cas_formatados))
 
     # --- ABA 4: ANÁLISE DO BANCO DE DADOS ---
