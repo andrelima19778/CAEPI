@@ -108,7 +108,7 @@ if uploaded_file is not None:
                     # Renomeia para exibição amigável
                     resultado.columns = ['Nº CA', 'EQUIPAMENTO', 'DATA DE VALIDADE', 'SITUACAO']
                     
-                    st.markdown(f"A lista apresentou {len(lista_cas)} CA(s). Encontrados {len(resultado)} registros.")
+                    st.markdown(f"A lista apresentou {len(lista_cas)} CA(s). Encontrados {len(resultado)} registro(s).")
                     st.dataframe(resultado, use_container_width=True, hide_index=True)
                     
                     csv_lote = resultado.to_csv(index=False, sep=';', encoding='utf-8-sig')
